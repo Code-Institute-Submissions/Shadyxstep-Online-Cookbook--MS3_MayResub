@@ -5,3 +5,7 @@
 .flashes h4 {
     line-height: 2;
 }
+
+.container {
+    background: url("../img/food.jpg") no-repeat center center fixed;
+}
