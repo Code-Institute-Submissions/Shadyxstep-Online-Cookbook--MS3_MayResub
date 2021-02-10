@@ -104,7 +104,13 @@ def add_recipe():
             "category_name": request.form.get("category_name"),
             "recipe_name": request.form.get("recipe_name"),
             "ingredients": request.form.get("ingredients"),
-            "method": request.form.get("method"),
+            "prep_time": request.form.get("prep_time"),
+            "cook_time": request.form.get("cook_time"),
+            "method_1": request.form.get("method_1"),
+            "method_2": request.form.get("method_2"),
+            "method_3": request.form.get("method_3"),
+            "method_4": request.form.get("method_4"),
+            "method_5": request.form.get("method_5"),
             "description": request.form.get("description"),
             "created_by": session["user"]
         }
@@ -114,6 +120,7 @@ def add_recipe():
 
     categories = mongo.db.categories.find().sort("recipe_type", 1)
     return render_template("add_recipe.html", categories=categories)
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),

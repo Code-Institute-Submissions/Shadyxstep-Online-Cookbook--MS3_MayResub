@@ -6,6 +6,10 @@
     line-height: 2;
 }
 
-.container {
-    background: url("../img/food.jpg") no-repeat center center fixed;
+.btn-small {
+    margin: 5px;
+}
+
+.card {
+    margin: 5px;
 }

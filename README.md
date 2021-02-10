@@ -1,8 +1,7 @@
-# Your Project's Name
+# e-Cookbook
 
-One or two paragraphs providing an overview of your project.
-
-Essentially, this part is your sales pitch.
+This project allows users to access an online database of recipes ranging from breakfasts, lunches & dinner. The user is required to sign in to avail of the recipes 
+on the website. The user can then add any recipes to the database.
  
 ## UX
  
