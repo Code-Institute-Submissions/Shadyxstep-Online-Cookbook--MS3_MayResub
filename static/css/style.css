@@ -14,9 +14,13 @@
 
 .card {
     margin: 5px;
-    padding: 5px;
 }
 
 .btn-large {
     margin: 5px;
+}
+
+img {
+    max-height: 40vh;
+    max-width: 100%;
 }

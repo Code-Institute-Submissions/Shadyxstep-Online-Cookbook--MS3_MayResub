@@ -4,7 +4,7 @@
 <h3 class="light-blue-text text-darken-4 center-align">Add your own recipe!</h3>
 
 <div class="row card-panel grey lighten-5">
-    <form class="col s12" method="POST" action="">
+    <form class="col s12" method="POST" action="{{ url_for('add_recipe') }}">
         <!--Recipe Category-->
         <div class="row">
             <div class="input-field col s12">
@@ -22,7 +22,7 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
-                <textarea id="recipe_name" name="recipe_name" minlength="5" maxlength="20" 
+                <textarea id="recipe_name" name="recipe_name" minlength="5" maxlength="30" 
                 type="text" class="materialize-textarea validate" required></textarea>
                 <label for="recipe_name">Recipe Name</label>
             </div>
