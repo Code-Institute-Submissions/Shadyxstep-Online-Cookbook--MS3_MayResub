@@ -17,11 +17,18 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
-
+# Function to gather set of recipe data 
 @app.route("/")
 @app.route("/get_recipes")
 def get_recipes():
     recipes = list(mongo.db.recipes.find())
+    return render_template("recipes.html", recipes=recipes)
+
+# Function to search, Index include recipe name + recipe category (eg breakfast, lunch, dinner)
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    recipes = list(mongo.db.recipes.find({"$text": {"$search": query}}))
     return render_template("recipes.html", recipes=recipes)
 
 
