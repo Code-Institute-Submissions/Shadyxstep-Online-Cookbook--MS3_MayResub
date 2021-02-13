@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h3 class="light-blue-text text-darken-4 center-align">Add your own recipe!</h3>
+<h3 class="white-text text-darken-4 center-align">Add your own recipe!</h3>
 
 <div class="row card-panel grey lighten-5">
     <form class="col s12" method="POST" action="{{ url_for('add_recipe') }}">
         <!--Recipe Category-->
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
+                <i class="fas fa-folder-open prefix text-darken-4"></i>
                 <select id="category_name" name="category_name" class="validate" required>
                     <option value="" disabled selected>Choose your recipe type</option>
                     {% for category in categories %}
@@ -21,7 +21,7 @@
         <!--Recipe Name-->
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+                <i class="fas fa-align-left prefix text-darken-4"></i>
                 <textarea id="recipe_name" name="recipe_name" minlength="5" maxlength="30" 
                 type="text" class="materialize-textarea validate" required></textarea>
                 <label for="recipe_name">Recipe Name</label>
@@ -31,7 +31,7 @@
         <!--Description-->
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-pen prefix light-blue-text text-darken-4"></i>
+                <i class="fas fa-pen prefix text-darken-4"></i>
                 <input id="description" name="description" type="text" class="validate">
                 <label for="description">Description</label>
             </div>
@@ -40,7 +40,7 @@
         <!--Image url-->
             <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-camera prefix light-blue-text text-darken-4"></i>
+                <i class="fas fa-camera prefix text-darken-4"></i>
                 <input id="img_url" name="img_url" type="text" class="validate">
                 <label for="img_url">Copy & paste an image url for your recipe here</label>
             </div>
@@ -49,7 +49,7 @@
         <!-- Prep Time Input-->
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-clock prefix light-blue-text text-darken-4"></i>
+                <i class="fas fa-clock prefix text-darken-4"></i>
                 <input id="prep_time" name="prep_time" type="text" class="validate">
                 <label for="prep_time">Preparation Time</label>
             </div>
@@ -59,7 +59,7 @@
 
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-temperature-high prefix light-blue-text text-darken-4"></i>
+                <i class="fas fa-temperature-high prefix text-darken-4"></i>
                 <input id="cook_time" name="cook_time" type="text" class="validate">
                 <label for="cook_time">Cooking Time</label>
             </div>
@@ -68,7 +68,7 @@
         <!--Ingredients-->
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-utensils prefix light-blue-text text-darken-4"></i>
+                <i class="fas fa-utensils prefix text-darken-4"></i>
                 <input id="ingredients" name="ingredients" type="text" class="validate">
                 <label for="ingredients">Recipe Ingredients</label>
             </div>
@@ -79,7 +79,7 @@
         <div class="row">
         <ul class="collapsible">
             <li>
-                <div class="collapsible-header prefix light-blue-text text-darken-4"><i class="fas fa-arrow-down prefix light-blue-text text-darken-4"></i>Click to enter your how to steps!</div>
+                <div class="collapsible-header prefix text-darken-4"><i class="fas fa-arrow-down prefix light-blue-text text-darken-4"></i>Click to enter your how to steps!</div>
                 <div class="collapsible-body"><span>
 
                 <input id="method_1" name="method_1" type="text" class="validate" placeholder="1:" required>
@@ -107,7 +107,7 @@
         <!--Submit button-->
         <div class="row">
             <div class="col s12 center-align">
-                <button type="submit" class="btn-large light-blue darken-1 text-shadow">
+                <button type="submit" class="btn-large green darken-1 text-shadow">
                     Add Recipe <i class="fas fa-plus-square right"></i>
                 </button>
             </div>
