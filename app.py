@@ -18,7 +18,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 # Function to gather set of recipe data 
-@app.route("/index")
+@app.route("/")
 def index():
     return render_template("index.html")
 
