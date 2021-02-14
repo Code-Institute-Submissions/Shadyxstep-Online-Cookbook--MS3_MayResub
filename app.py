@@ -166,7 +166,8 @@ def delete_recipe(recipe_id):
 @app.route("/get_categories")
 def get_categories():
     categories = list(mongo.db.categories.find().sort("category_name", 1))
-    return render_template("categories.html", categories=categories)
+    recipes = list(mongo.db.recipes.find().sort("category_name", 1))
+    return render_template("categories.html", categories=categories, recipes=recipes)
 
 
 @app.route("/add_category", methods=["GET", "POST"])
