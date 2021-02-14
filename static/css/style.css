@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body {
+    font-family: 'Montserrat', sans-serif;
     margin:0;
     padding:0;
     height:100%;
     width:100%;
-    background-color: black;
-    background-image: url("https://images.unsplash.com/photo-1573067485648-4cb2618b5e09?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+    background: url("https://images.unsplash.com/photo-1599297914860-1ccd36987a52?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+    background-size: cover;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
 }
+
 
 main {
     flex: 1 0 auto;
@@ -52,8 +54,6 @@ main {
     height: 100%;
     width: 100%;
     margin: auto;
-    background: url("https://images.unsplash.com/photo-1599297914860-1ccd36987a52?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80") no-repeat 100% 100%;
-    background-size: cover;
     display: table;
     top:0;
     vertical-align: middle;

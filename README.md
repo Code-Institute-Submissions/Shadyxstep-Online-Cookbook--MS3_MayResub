@@ -1,7 +1,6 @@
-# e-Cookbook
+# Snacc
 
-This project allows users to access an online database of recipes ranging from breakfasts, lunches & dinner. The user is required to sign in to avail of the recipes 
-on the website. The user can then add any recipes to the database.
+This [project](https://online-cookbook-ms3.herokuapp.com/) is my third milestone project in Full Stack Software Development course run by [Code Institute](https://codeinstitute.net/)
  
 ## UX
  
