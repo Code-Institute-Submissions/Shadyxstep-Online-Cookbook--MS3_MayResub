@@ -5,10 +5,11 @@ This [project](https://online-cookbook-ms3.herokuapp.com/) is my third milestone
 Want to store your favourite recipes all in one place?
 This website allows you to share your favourite recipes! You can also see recipes that other user's have submitted.
 Create, read, update & delete recipes once you register on site.
+You can also browse recipes on the database by category - Breakfast, Lunch, Dinner & Beverages!
  
 ## UX
  
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+This website is made for people who love to cook & want an easy solution to storing their favourite recipes all in one place.
 
 In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
 

@@ -21,7 +21,7 @@
         <!--Top Nav Bar-->
         <nav class="nav-extended text-shadow black lighten-1">
             <div class="nav-wrapper">
-                <a href="{{ url_for('index') }}" class="brand-logo">Snacc</a>
+                <a href="{{ url_for('index') }}" class="brand-logo">Snacc </a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('index') }}">Home</a></li>
@@ -83,24 +83,16 @@
     <footer class="page-footer black">
         <div class="container">
             <div class="row">
-                <div class="col l6 s12">
+                <div class="col s12 center-align">
                     <h5 class="white-text">Snacc <i class="fas fa-hamburger white-text small"></i></h5>
-                    <p class="grey-text text-lighten-4">A website that stores all of your favourite recipes!</p>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Navigate</h5>
-                    <ul>
-                        <li><a class="grey-text text-lighten-3" href="{{ url_for('get_recipes') }}">Recipes</a></li>
-                        <li><a class="grey-text text-lighten-3" href="{{ url_for('add_recipe') }}">Add your own</a></li>
-                        <li><a class="grey-text text-lighten-3" href="{{ url_for('register') }}">Register</a></li>
-                        <li><a class="grey-text text-lighten-3" href="{{ url_for('login') }}">Log In</a></li>
-                    </ul>
+                    <p class="grey-text text-lighten-4">We store your favourite recipes so you don't have to.</p>
+                    <a href="https://instagram.com/leo_morgan"><i class="fas fa-camera-retro white-text small"></i></a>
                 </div>
             </div>
         </div>
-        <div class="footer-copyright">
+        <div class="footer-copyright center-align">
             <div class="container">
-                © 2021 Leo Morgan
+                © 2021 Snacc by Leo Morgan 
             </div>
         </div>
     </footer>
