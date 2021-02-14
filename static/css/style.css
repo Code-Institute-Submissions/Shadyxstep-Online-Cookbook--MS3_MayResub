@@ -13,7 +13,6 @@ body {
     flex-direction: column;
 }
 
-
 main {
     flex: 1 0 auto;
 }
@@ -46,9 +45,11 @@ main {
     object-fit: cover;
 }
 
+
 .card-panel {
     border-radius: 15px;
 }
+
 
 .intro {
     height: 100%;
