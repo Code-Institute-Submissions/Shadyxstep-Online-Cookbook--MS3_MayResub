@@ -62,3 +62,46 @@
 </section>
 
 {% endblock %}
+
+<div class="row">
+    <h1 class="center-align white-text text-shadow text-darken-4"><i class="fas fa-hamburger"></i> <i class="fas fa-pizza-slice"></i> <i class="fas fa-drumstick-bite"></i></h1>
+    <div class="col s12 m8 offset-m2">
+        <div class="transparent center-align">
+            <h3 class="center-align white-text text-shadow text-darken-4">
+                Welcome to Snacc!
+            </h3>
+            <h4 class="center-align white-text text-shadow text-darken-4">
+                A website that allows you to store your favourite recipes!
+                <br>
+                <br>
+                Sign up to access full features
+                <br>                
+                <br>
+                <a class="waves-effect waves-light btn-large white black-text" href="{{ url_for('register') }}"><i class="fas fa-user-plus"></i> Sign Up!</a>
+                <br>
+                <br>
+                <br>
+                Already signed up?
+                <br>
+                <br>
+                <a class="waves-effect waves-light btn-large white black-text" href="{{ url_for('login') }}"><i class="fas fa-user-plus"></i> Log In</a>
+            </h4>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+body {
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+    background-color: black;
+    background-image: url("https://images.unsplash.com/photo-1573067485648-4cb2618b5e09?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
