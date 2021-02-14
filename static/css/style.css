@@ -48,6 +48,7 @@ main {
 
 .card-panel {
     border-radius: 15px;
+    margin: 5px;
 }
 
 
@@ -58,6 +59,11 @@ main {
     display: table;
     top:0;
     vertical-align: middle;
+}
+
+.pagination li a {
+    color: #fff;
+    font-size: 1.8rem;
 }
 
 /* Landing Page Styling */

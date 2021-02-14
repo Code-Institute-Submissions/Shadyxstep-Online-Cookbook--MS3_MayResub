@@ -22,11 +22,36 @@ mongo = PyMongo(app)
 def index():
     return render_template("index.html")
 
-# Function to gather set of recipe data 
+# Function to gather all sets of recipe data 
 @app.route("/get_recipes")
 def get_recipes():
     recipes = list(mongo.db.recipes.find())
     return render_template("recipes.html", recipes=recipes)
+
+
+@app.route("/breakfast")
+def breakfast():
+    recipes = list(mongo.db.recipes.find())
+    return render_template("breakfast.html", recipes=recipes)
+
+
+@app.route("/lunch")
+def lunch():
+    recipes = list(mongo.db.recipes.find())
+    return render_template("lunch.html", recipes=recipes)
+
+
+@app.route("/dinner")
+def dinner():
+    recipes = list(mongo.db.recipes.find())
+    return render_template("dinner.html", recipes=recipes)
+
+
+@app.route("/beverages")
+def beverages():
+    recipes = list(mongo.db.recipes.find())
+    return render_template("beverages.html", recipes=recipes)
+
 
 # Function to search, Index include recipe name + recipe category (eg breakfast, lunch, dinner)
 @app.route("/search", methods=["GET", "POST"])
