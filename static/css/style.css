@@ -105,3 +105,17 @@ main {
     color: #fff;
     text-shadow: 2px 2px #000;
 }
+
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 300%;
+    }
+    .btn-landing {
+        font-size: 110%;
+        padding: 7px 15px;
+    }
+    p {
+        font-size: 100%;
+        line-height: 160%;
+    }
+}

@@ -17,12 +17,12 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
-# Function to gather set of recipe data 
+# Directs visitor to landing page
 @app.route("/")
 def index():
     return render_template("index.html")
 
-
+# Function to gather set of recipe data 
 @app.route("/get_recipes")
 def get_recipes():
     recipes = list(mongo.db.recipes.find())
