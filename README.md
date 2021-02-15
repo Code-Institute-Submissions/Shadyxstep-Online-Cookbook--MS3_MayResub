@@ -2,7 +2,7 @@
 
 ![responsive_screenshot](static/img/ms3responsive.PNG)
 
-This [project](https://online-cookbook-ms3.herokuapp.com/) is my third milestone project in Full Stack Software Development course run by [Code Institute](https://codeinstitute.net/)
+This [project](https://online-cookbook-ms3.herokuapp.com/) is my third milestone project (Data Centric Development) in Full Stack Software Development course run by [Code Institute](https://codeinstitute.net/)
 
 Want to store your favourite recipes all in one place?
 This website allows you to share your favourite recipes! You can also see recipes that other user's have submitted.
