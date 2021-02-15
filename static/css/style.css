@@ -17,6 +17,10 @@ main {
     flex: 1 0 auto;
 }
 
+h3 {
+    margin-top: 5%;
+}
+
 .text-shadow {
     text-shadow: 2px 2px 2px rgba(0,0,0);
 }
@@ -45,11 +49,20 @@ main {
     object-fit: cover;
 }
 
+.card {
+    border-radius: 20px;
+}
 
+.card-image {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: transparent;
+}
 
 .card-panel {
     border-radius: 15px;
     margin: 5px;
+    opacity: .9;
 }
 
 
@@ -70,6 +83,10 @@ main {
 
 
 /* Landing Page Styling */
+
+.intro {
+    min-height: 100vh;
+}
 
 .intro .inner {
     display: table-cell;
@@ -117,6 +134,11 @@ main {
 }
 
 @media (max-width: 768px) {
+
+    .landing-header {
+        margin-top: 5%;
+    }
+
     .content h1 {
         font-size: 300%;
     }

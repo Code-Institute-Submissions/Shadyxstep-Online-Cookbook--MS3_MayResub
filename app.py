@@ -132,6 +132,7 @@ def profile(username):
 def logout():
     # remove user from session cookies
     flash("You have been logged out")
+    flash("See you next time!")
     session.pop("user")
     return redirect(url_for("login"))
 
@@ -200,6 +201,7 @@ def delete_recipe(recipe_id):
     flash("Recipe Successfully Deleted")
     return redirect(url_for("get_recipes"))
 
+
 # Reads Categories & Recipes for Manage Recipes Page
 @app.route("/get_categories")
 def get_categories():
@@ -208,18 +210,35 @@ def get_categories():
     return render_template("categories.html", categories=categories, recipes=recipes)
 
 
-# ADD Recipe function ([C]RUD)
-@app.route("/add_category", methods=["GET", "POST"])
-def add_category():
-    if request.method == "POST":
-        category = {
-            "category_name": request.form.get("category_name")
-        }
-        mongo.db.categories.insert_one(category)
-        flash("New Category Added")
-        return redirect(url_for("get_categories"))
+# Manage breakfast recipes
+@app.route("/breakfast_categories")
+def breakfast_categories():
+    categories = list(mongo.db.categories.find().sort("category_name", 1))
+    recipes = list(mongo.db.recipes.find().sort("category_name", 1))
+    return render_template("breakfast_categories.html", categories=categories, recipes=recipes)
 
-    return render_template("add_category.html")
+
+# Manage lunch recipes
+@app.route("/lunch_categories")
+def lunch_categories():
+    categories = list(mongo.db.categories.find().sort("category_name", 1))
+    recipes = list(mongo.db.recipes.find().sort("category_name", 1))
+    return render_template("lunch_categories.html", categories=categories, recipes=recipes)
+
+
+@app.route("/dinner_categories")
+def dinner_categories():
+    categories = list(mongo.db.categories.find().sort("category_name", 1))
+    recipes = list(mongo.db.recipes.find().sort("category_name", 1))
+    return render_template("dinner_categories.html", categories=categories, recipes=recipes)
+
+
+@app.route("/beverage_categories")
+def beverage_categories():
+    categories = list(mongo.db.categories.find().sort("category_name", 1))
+    recipes = list(mongo.db.recipes.find().sort("category_name", 1))
+    return render_template("beverage_categories.html", categories=categories, recipes=recipes)
+
 
 
 if __name__ == "__main__":

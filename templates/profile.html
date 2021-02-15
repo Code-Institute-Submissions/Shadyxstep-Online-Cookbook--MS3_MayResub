@@ -1,9 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
 
+<h3 class="center-align white-text text-shadow text-darken-4">Welcome !</h3>
 
+<section class="intro">
+    <div class="inner">
     <div class="row">
-         <h2 class="center-align white-text text-shadow text-darken-4">Welcome !</h2>
         <div class="col s12 m8 offset-m2">
             <div class="card-panel transparent">
                 <h3 class="center-align white-text text-shadow text-darken-4">
@@ -18,11 +20,13 @@
     <div class="row">
         <div class="col s12">
             <p class="center-align white-text">
-                New Here ? 
+                All cooked out ? 
                 <br>
-                <a href="{{ url_for('register') }}" class="white-text text-darken"><i class="fas fa-user-plus"></i> Register Account</a>
+                <a href="{{ url_for('logout') }}" class="white-text text-darken"><i class="fas fa-user-plus"></i> Log Out</a>
             </p>
         </div>
     </div>
+</div>
+</section>
 
 {% endblock %}
