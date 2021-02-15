@@ -136,7 +136,7 @@ h3 {
 @media (max-width: 768px) {
 
     h3 {
-        margin: 0;
+        margin-top: 20px;
     }
 
     .landing-header {
