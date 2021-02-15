@@ -74,7 +74,7 @@ the user can view all associated data with that recipe ranging from recipe name,
 ![Update_crud](static/img/update-crud-functionality.PNG)
 
 **Delete recipes**
--[CRU**D**] Only registered users can utilize the delete feature on the website. Defensive programming function has been implemented so that users can only delete recipes on the website that they have created using their profile. 
+-[CRU**D**] Only registered users can utilize the delete feature on the website. Defensive programming function has been implemented so that users can only delete recipes on the website that they have created using their profile. A flash message also appears on clicking the delete button to confirm whether or not the user wants to delete the recipe. 
 
 ![Delete_crud](static/img/delete-crud-functionality.PNG)
 
