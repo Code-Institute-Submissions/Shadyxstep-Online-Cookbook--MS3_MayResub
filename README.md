@@ -85,6 +85,10 @@ the user can view all associated data with that recipe ranging from recipe name,
 -There is an admin profile which allows full access to CRUD functions on the website.
     -Admin can edit/delete any recipe from the database
 
+Admin may delete/update any recipe on the database
+Registered users will only see the delete button for recipes they have submitted.
+![Admin](static/img/admin_delete.PNG)
+
 ### Features Left to Implement
 
 - More features regarding users control over their profiles.
