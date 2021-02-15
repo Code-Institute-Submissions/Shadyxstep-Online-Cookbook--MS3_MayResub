@@ -62,18 +62,23 @@ In this section, you should go over the different parts of your project, and des
 
 **Add recipes**
 - [**C**RUD] Registered users can create / add new recipes to the website. Certain defensive programming functions have been implemented such as having the required attribute on multiple input fields whilst adding a recipe. No submission goes through unless input requirements are met.
+
 ![Create_crud](static/img/create-crud-functionality.PNG)
 
 **View recipes**
--[C**R**UD] Both guest & registered users can view recipes on site. By clicking the expandable 'Click for more' element under a recipe, the user can view all associated data with that recipe ranging from recipe name, prep / cook time, ingredients to how to steps
+-[C**R**UD] Both guest & registered users can view recipes on site. By clicking the expandable 'Click for more' element under a recipe, 
+the user can view all associated data with that recipe ranging from recipe name, prep / cook time, ingredients to how to steps
+
 ![Read_crud](static/img/read-crud-functionality.PNG)
 
 **Edit/Update recipes**
 -[CR**U**D] Registered users can update recipes on the current database. Flash message lets user know if a recipe has been successfully updated.
+
 ![Update_crud](static/img/update-crud-functionality.PNG)
 
 **Delete recipes**
 -[CRU**D**] Only registered users can utilize the delete feature on the website. Defensive programming function has been implemented so that users can only delete recipes on the website that they have created using their profile. 
+
 ![Delete_crud](static/img/delete-crud-functionality.PNG)
 
 **Admin**
