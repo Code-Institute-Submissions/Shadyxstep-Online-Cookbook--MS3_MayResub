@@ -12,8 +12,7 @@ You can also browse recipes on the database by category - Breakfast, Lunch, Dinn
 ## UX
  
 This website is made for people who love to cook & want an easy solution to storing their favourite recipes all in one place.
-
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
+Registered users can submit their favourite recipes, update recipes & delete recipes they created that they no longer use!
 
 "**_As a user, I would like to_** _____________________________"
 
@@ -34,8 +33,6 @@ In particular, as part of this section we recommend that you provide a list of U
 
 
 ## Features
-
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
  
 ### Existing Features
 
@@ -108,8 +105,6 @@ Registered users will only see the delete button for recipes they have submitted
 None of the above features are currently implemented in project. They are speculative ideas for possible further personal development of the project.
 
 ## Technologies Used
-
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 
 - [JQuery](https://jquery.com)
     - The project uses **JQuery** to simplify DOM manipulation.
@@ -190,7 +185,7 @@ I had a few issues implementing this feature but they were all simple issues reg
 
 **Navigation**
 
-I have included certain criteria that hides certain navigation links to guest users.
+I have included certain criteria in my code that hides certain navigation links to guest users.
 Guest users are unable to directly access the manage recipes tab which allows for ease of updating recipes on the database.
 I have tested this by creating multiple accounts & visiting the website as a guess off multiple different devices to ensure hidden nav links are working as intended.
 
