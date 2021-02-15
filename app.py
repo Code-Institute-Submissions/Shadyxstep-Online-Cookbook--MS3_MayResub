@@ -17,12 +17,15 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
+
 # Directs visitor to landing page
 @app.route("/")
 def index():
     return render_template("index.html")
 
-# Function to gather all sets of recipe data 
+
+# Function to gather all sets of recipe data
+# (C[R]UD) Read function
 @app.route("/get_recipes")
 def get_recipes():
     recipes = list(mongo.db.recipes.find())
@@ -53,7 +56,7 @@ def beverages():
     return render_template("beverages.html", recipes=recipes)
 
 
-# Function to search, Index include recipe name + recipe category (eg breakfast, lunch, dinner)
+# Search function using recipe category/name
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")
@@ -97,21 +100,21 @@ def login():
         if existing_user:
             # ensure hashed password matches user input
             if check_password_hash(
-                existing_user["password"], request.form.get("password")):
-                    session["user"] = request.form.get("username").lower()
-                    flash("Welcome, {}".format(
-                        request.form.get("username")))
-                    return redirect(url_for(
-                        "profile", username=session["user"]))
+                    existing_user["password"], request.form.get("password")):
+                        session["user"] = request.form.get("username").lower()
+                        flash("Welcome, {}".format(
+                            request.form.get("username")))
+                        return redirect(url_for(
+                            "profile", username=session["user"]))
             else:
                 # invalid password entered
                 flash("Incorrect Username and/or Password")
                 return redirect(url_for("login"))
         else:
-            # invalid username entered
+            # username doesnt exist
             flash("Incorrect Username and/or Password")
             return redirect(url_for("login"))
-        
+
     return render_template("login.html")
 
 
@@ -163,11 +166,8 @@ def add_recipe():
     categories = mongo.db.categories.find().sort("recipe_type", 1)
     return render_template("add_recipe.html", categories=categories)
 
+
 # UPDATE Recipe function (CR[U]D)
-"""
-Gets recipe ID & reinjects current data associated with selected recipe into an edit form where the
-user can update the recipe.
-"""
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
     if request.method == "POST":
@@ -191,7 +191,11 @@ def edit_recipe(recipe_id):
 
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     categories = mongo.db.categories.find().sort("recipe_type", 1)
-    return render_template("edit_recipe.html", recipe=recipe, categories=categories)
+    return render_template(
+        "edit_recipe.html",
+        recipe=recipe,
+        categories=categories
+        )
 
 
 # DELETE Recipe function (CRU[D])
@@ -205,40 +209,34 @@ def delete_recipe(recipe_id):
 # Reads Categories & Recipes for Manage Recipes Page
 @app.route("/get_categories")
 def get_categories():
-    categories = list(mongo.db.categories.find().sort("category_name", 1))
     recipes = list(mongo.db.recipes.find().sort("category_name", 1))
-    return render_template("categories.html", categories=categories, recipes=recipes)
+    return render_template("categories.html", recipes=recipes)
 
 
 # Manage breakfast recipes
 @app.route("/breakfast_categories")
 def breakfast_categories():
-    categories = list(mongo.db.categories.find().sort("category_name", 1))
     recipes = list(mongo.db.recipes.find().sort("category_name", 1))
-    return render_template("breakfast_categories.html", categories=categories, recipes=recipes)
+    return render_template("breakfast_categories.html", recipes=recipes)
 
 
 # Manage lunch recipes
 @app.route("/lunch_categories")
 def lunch_categories():
-    categories = list(mongo.db.categories.find().sort("category_name", 1))
     recipes = list(mongo.db.recipes.find().sort("category_name", 1))
-    return render_template("lunch_categories.html", categories=categories, recipes=recipes)
+    return render_template("lunch_categories.html", recipes=recipes)
 
 
 @app.route("/dinner_categories")
 def dinner_categories():
-    categories = list(mongo.db.categories.find().sort("category_name", 1))
     recipes = list(mongo.db.recipes.find().sort("category_name", 1))
-    return render_template("dinner_categories.html", categories=categories, recipes=recipes)
+    return render_template("dinner_categories.html", recipes=recipes)
 
 
 @app.route("/beverage_categories")
 def beverage_categories():
-    categories = list(mongo.db.categories.find().sort("category_name", 1))
     recipes = list(mongo.db.recipes.find().sort("category_name", 1))
-    return render_template("beverage_categories.html", categories=categories, recipes=recipes)
-
+    return render_template("beverage_categories.html", recipes=recipes)
 
 
 if __name__ == "__main__":
