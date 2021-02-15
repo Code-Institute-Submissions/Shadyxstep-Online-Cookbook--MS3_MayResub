@@ -91,18 +91,21 @@ Registered users will only see the delete button for recipes they have submitted
 
 ### Features Left to Implement
 
-- More features regarding users control over their profiles.
+**More features regarding users control over their profiles.**
     -Enable to delete their account on site.
     -Enable user to change passwords if they wish.
     -Enable users to filter recipes to those only they have submitted.
 
--Allergens, Nutritional information
-    -Added information to each recipe
+**Allergens, Nutritional information**
+    -Further information added to each recipe
 
--Extra sort methods
+**Extra sort methods**
     -Add more filter criteria so users can filter by cuisine/nutrition/allergens.
 
--Extra pagination for all recipes page
+**Extra pagination for all recipes page**
+    -In the event the recipe has a high volume of recipes being submitted to the database.
+
+None of the above features are currently implemented in project. They are speculative ideas for possible further personal development of the project.
 
 ## Technologies Used
 
@@ -223,10 +226,10 @@ recognizing elements imported using [AnimateCSS](https://animate.style/) & [Mate
 
 **JavaScript**
 - [JShint](https://jshint.com/)
-    -"There is only one function in this file.
-        It takes no arguments.
-        This function contains 6 statements.
-        Cyclomatic complexity number for this function is 1.
+    -There is only one function in this file.
+    -It takes no arguments.
+    -This function contains 6 statements.
+    -Cyclomatic complexity number for this function is 1.
 
         One undefined variable
         13	$
@@ -249,7 +252,7 @@ recognizing elements imported using [AnimateCSS](https://animate.style/) & [Mate
 Please note - in order to run this project locally on your own system, you will need the following installed:
 - [Python3](https://www.python.org/downloads) to run the application.
 - [PIP](https://pip.pypa.io/en/stable/installing) to install all app requirements.
-- Any IDE such as [Microsoft Visual Studio Code](https://code.visualstudio.com). or [GitPod](https://code.gitpod.io).
+- Any IDE such as [Microsoft Visual Studio Code](https://code.visualstudio.com) or [GitPod](https://code.gitpod.io).
 - [GIT](https://www.atlassian.com/git/tutorials/install-git) for cloning and version control.
 - [MongoDB](https://www.mongodb.com) to develop your own database either locally or remotely on MongoDB Atlas.
 
@@ -269,31 +272,31 @@ Next, there's a series of steps to take in order to proceed with local deploymen
 
 **recipes**
 
-_id: <ObjectId>
-category_name: <string>
-recipe_name: <string>
-img_url: <string>
-prep_time: <string>
-cook_time: <string>
-ingredients: <string>
-method_1: <string>
-method_1: <string>
-method_1: <string>
-method_1: <string>
-method_1: <string>
-description: <string>
-created_by: <string>
+-_id: <ObjectId>
+-category_name: <string>
+-recipe_name: <string>
+-img_url: <string>
+-prep_time: <string>
+-cook_time: <string>
+-ingredients: <string>
+-method_1: <string>
+-method_1: <string>
+-method_1: <string>
+-method_1: <string>
+-method_1: <string>
+-description: <string>
+-created_by: <string>
 
 **users**
 
-_id: <ObjectId>
-username: <string>
-password: <string>
+-_id: <ObjectId>
+-username: <string>
+-password: <string>
 
 **categories**
 
-_id: <ObjectId>
-category_name: <string>
+-_id: <ObjectId>
+-category_name: <string>
 
 ### Remote Deployment
 
