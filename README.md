@@ -8,11 +8,53 @@ Want to store your favourite recipes all in one place?
 This website allows you to share your favourite recipes! You can also see recipes that other user's have submitted.
 Create, read, update & delete recipes once you register on site.
 You can also browse recipes on the database by category - Breakfast, Lunch, Dinner & Beverages!
- 
+
+## Table of Contents
+1. [**UX**](#ux)
+    - [**User Stories**](#user-stories)
+    - [**Design**](#design)
+        - [**Framework**](#framework)
+        - [**Color Scheme**](#color-scheme)
+        - [**Icons**](#icons)
+        - [**Typography**](#typography)
+
+2. [**Features**](#features)
+    - [**Existing Features**](#existing-features)
+    - [**Features Left to Implement**](#features-left-to-implement)
+
+3. [**Technologies Used**](#technologies-used)
+    - [**Front-End Technologies**](#front-end-technologies)
+    - [**Back-End Technologies**](#back-end-technologies)
+    - [**Tools**](#tools)
+    - [**Resources**](#resources)
+
+4. [**Testing**](#testing)
+    - [**Validators**](#validators)
+    - [**Compatibility**](#compatibility)
+    - [**Known Issues**](#known-issues)
+
+5. [**Deployment**](#deployment)
+    - [**Local Deployment**](#local-deployment)
+    - [**Remote Deployment**](#remote-deployment)
+
+6. [**Credits**](#credits)
+    - [**Content**](#content)
+    - [**Media**](#media)
+    - [**Code**](#code)
+    - [**Acknowledgements**](#acknowledgements)
+
+7. [**Resubmit Fixes**](#resubmission)
+    - [**Errors Addressed**](#errors)
+
+
 ## UX
  
 This website is made for people who love to cook & want an easy solution to storing their favourite recipes all in one place.
 Registered users can submit their favourite recipes, update recipes & delete recipes they created that they no longer use!
+The website is a dark themed website which utilizes the Materialize library to create responsive web design & cards for displaying recipes.
+
+
+### User Stories
 
 "**_As a user, I would like to_** _____________________________"
 
@@ -31,6 +73,46 @@ Registered users can submit their favourite recipes, update recipes & delete rec
 - :white_check_mark: *delete* my **own recipes**.
 - :white_check_mark: be able to **log out**.
 
+### Design
+
+- The design of this website focuses on a dark themed background and displays the recipes on site in responsive MaterializeCSS cards.
+- The visual contrast to the dark theme background is highlighted by the vivid & bright colours in the current recipe images, making it visually striking to users visiting the site.
+- I wanted the website to have a simplistic high contrast colour scheme.
+- I wanted the website to be intuitive and easy to navigate.
+- I wanted to achieve a clean, uncluttered aesthetic.
+- I wanted the website to be accessible & responsive on all modern devices (desktop, mobile, tablet).
+
+#### Frameworks
+
+- [MaterializeCSS](https://materializecss.com/)
+    - My preferred CSS framework for this project because of its visually striking elements, simple-to-understand documentation & simplicity of use.
+- [jQuery 3.6.0](https://code.jquery.com/jquery/)
+    - In an effort to keep the JavaScript minimal, I have decided to use jQuery as foundation to my scripts framework.
+- [Django 3.1.0](https://www.djangoproject.com/download/)
+    - Django is a free and open-source web framework that I've used to render the back-end Python with the front-end Bootstrap4 CSS3 Framework and AnimateCSS Library. 
+
+#### Color Scheme
+
+-  When creating this website I favoured simplicity, dark thematic backround and relied on the vivid & colourful recipe images for aesthetic visual contract on the site.
+-  The color scheme used for this website is simply Black/White with images taken from [Unsplash](https://unsplash.com/) & [BBC Good Food](https://www.bbcgoodfood.com/)
+
+- ![#fff](https://via.placeholder.com/15/fff/000000?text=+) `#fff`
+- ![#000](https://via.placeholder.com/15/000/000000?text=+) `#000`
+
+#### Icons
+
+- [Font Awesome 5.15.3](https://fontawesome.com/)
+    - Font Awesome was my preferred source for icon use across the site rather than Materialize Icons. Font Awesome Icons are simplistic & easily customizable and displayed through *classes* rather than *text*
+    which fits the aesthetic Snacc is targetting
+
+#### Typography
+
+- [Google Fonts](https://fonts.google.com/) were used across the site:
+- [Montserrat](https://fonts.google.com/specimen/Montserrat#standard-styles) : default font.
+- [AnimateCSS](https://animate.style/) : Animations used for landing page heading.
+- [MaterializeCSS](https://materializecss.com/) : Typography / Colors Documentation from MaterializeCSS was used across the site.
+
+##### back to [top](#table-of-contents)
 
 ## Features
  
@@ -104,7 +186,12 @@ Registered users will only see the delete button for recipes they have submitted
 
 None of the above features are currently implemented in project. They are speculative ideas for possible further personal development of the project.
 
+##### back to [top](#table-of-contents)
+
 ## Technologies Used
+
+- [Git](https://git-scm.com/) 
+    - Primary version control for pushing/pulling code to & from my online repository.
 
 - [JQuery](https://jquery.com)
     - The project uses **JQuery** to simplify DOM manipulation.
@@ -162,6 +249,22 @@ None of the above features are currently implemented in project. They are specul
 - [PyMongo 3.8.0](https://api.mongodb.com/python/current/) - Used as the Python API for MongoDB.
 
 - [Python dotenv](https://github.com/theskumar/python-dotenv) - Used to get/set values in `.env` file.
+
+
+### Tools 
+
+- [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) - Allowed me to use browser as an editor for experimental style changes.
+
+- [Am I Responsive](http://ami.responsivedesign.is/) - Check responsiveness of website.
+
+### Resources
+
+- [cdnjs](https://cdnjs.com/)
+- [w3schools](https://www.w3schools.com/) 
+- [Stack Overflow](https://stackoverflow.com/)
+- Thorin Flask Mini Project - [Code Institute](https://codeinstitute.net/) Data Centric Development Module
+
+##### back to [top](#table-of-contents)
 
 ## Testing
 
@@ -240,6 +343,37 @@ recognizing elements imported using [AnimateCSS](https://animate.style/) & [Mate
     - App.py files are completely PEP8 compliant!
     - env.py has one non pep8 compliant line, the URL for MONGODB_URI
 
+### Compatibility
+
+To ensure a broad range of users can successfully use the site, I tested it across the 5 major browsers in both desktop and mobile configuration throughout the development of the project.
+
+- **Chrome** 
+- **Edge** 
+- **Firefox** 
+- **Safari** 
+- **Opera** 
+
+#### Screen Sizes
+
+Using Google Chrome [DevTools](https://developers.google.com/web/tools/chrome-devtools) profiles:
+- **Moto G4**
+- **Galaxy S5**
+- **Pixel 2/ 2XL**
+- **iPhone 5/SE**
+- **iPhone 6/7/8** 
+- **iPhone 6/7/8 Plus** 
+- **iPhone X**
+- **iPad / Pro**
+- **Surface Duo**
+- **Galaxy  Fold**
+
+- I have also manually tested this website across various devices I own.
+    - desktop (2000px)
+    - Laptop (1600px)
+    - Large Phone (500px)
+
+##### back to [top](#table-of-contents)
+
 ## Deployment
 
 ### Local Deployment
@@ -314,6 +448,8 @@ This site is currently deployed on [Heroku](https://www.heroku.com/) using the *
     - **PASSWORD** : `<you own email password>`
 5. Your app should be successfully deployed to Heroku at this point.
 
+##### back to [top](#table-of-contents)
+
 ## Credits
 
 ### Content
@@ -326,6 +462,14 @@ This site is currently deployed on [Heroku](https://www.heroku.com/) using the *
 
 -[Unsplash](https://unsplash.com/) Free high quality stock images
 
+### Code
+
+- [Stack Overflow](https://stackoverflow.com/)
+- [Slack](https://slack.com/intl/en-ie/) - Specifically 'Full Stack Frameworks' in the Code Institute Channel.
+- [Python Docs](https://docs.python.org/3/)
+- [AnimateCSS](https://animate.style/)
+- [Flask Docs](https://flask.palletsprojects.com/en/1.1.x/)
+
 ### Acknowledgements
 
 - I received inspiration for this project from 
@@ -333,3 +477,25 @@ This site is currently deployed on [Heroku](https://www.heroku.com/) using the *
 -[Tim Nelson](https://github.com/TravelTimN/)
     -Found his tutorials in data centric development module of the course to be very informative and easy to understand.
     -Tried to follow his formatting style for his README files in his numerous projects.
+
+##### back to [top](#table-of-contents)
+
+## Resubmission
+
+- Project feedback on HTML validation errors
+    - "Validate HTML by url to ensure that there are no errors in your markup (https://validator.w3.org/nu/)., errors can be seen in pages - https://validator.w3.org/nu/?doc=https%3A%2F%2Fonline-cookbook-ms3.herokuapp.com%2Fget_recipes"
+    - These have been rectified by removing empty elements & adding alt tags to all img attributes on the pages
+    - [Correction Commit: 890a688](https://github.com/Shadyxstep/Online-Cookbook--MS3/commit/890a6888af043778d8afaf381927091893dfeece)
+
+- Debug turned on in production version.
+    - [Correction Commit: 5cd713c](https://github.com/Shadyxstep/Online-Cookbook--MS3/commit/5cd713c940aaed6029b4a8ce0a42d7abce94437e)
+
+- Added a tablke of content to readme as suggested in project feedback email.
+
+- App.py file retested to ensure pep8 compliance.
+
+## **Disclaimer** 
+
+All images and content on this website is for educational purposes only.
+
+##### [Back to Table of Contents](#table-of-contents)
