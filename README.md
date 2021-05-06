@@ -484,7 +484,7 @@ This site is currently deployed on [Heroku](https://www.heroku.com/) using the *
 
 ## Resubmission
 
-- Project feedback on HTML validation errors
+-  HTML validation errors addressed
     - "Validate HTML by url to ensure that there are no errors in your markup (https://validator.w3.org/nu/)., errors can be seen in pages - https://validator.w3.org/nu/?doc=https%3A%2F%2Fonline-cookbook-ms3.herokuapp.com%2Fget_recipes"
     - These have been rectified by removing empty elements & adding alt tags to all img attributes on the page.
     - [Correction Commit: 890a688](https://github.com/Shadyxstep/Online-Cookbook--MS3/commit/890a6888af043778d8afaf381927091893dfeece)
@@ -495,7 +495,7 @@ This site is currently deployed on [Heroku](https://www.heroku.com/) using the *
     - [Correction Commit: 5cd713c](https://github.com/Shadyxstep/Online-Cookbook--MS3/commit/5cd713c940aaed6029b4a8ce0a42d7abce94437e).
     - Debug is now turned to False.
 
-- Added a table of content to readme as suggested in project feedback email.
+- Added a table of contents to readme to make it easier to navigate.
 
 - App.py file retested to ensure pep8 compliance. No issues found.
 
