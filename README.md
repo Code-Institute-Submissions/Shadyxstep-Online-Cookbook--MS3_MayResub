@@ -88,12 +88,12 @@ The website is a dark themed website which utilizes the Materialize library to c
     - My preferred CSS framework for this project because of its visually striking elements, simple-to-understand documentation & simplicity of use.
 - [jQuery 3.6.0](https://code.jquery.com/jquery/)
     - In an effort to keep the JavaScript minimal, I have decided to use jQuery as foundation to my scripts framework.
-- [Django 3.1.0](https://www.djangoproject.com/download/)
-    - Django is a free and open-source web framework that I've used to render the back-end Python with the front-end Bootstrap4 CSS3 Framework and AnimateCSS Library. 
+- [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+    - Flask is a free micro web framework that I've used to render the back-end Python with the front-end MaterializeCSS Framework and AnimateCSS Library. 
 
 #### Color Scheme
 
--  When creating this website I favoured simplicity, dark thematic backround and relied on the vivid & colourful recipe images for aesthetic visual contract on the site.
+-  When creating this website I favoured simplicity, dark thematic backround and relied on the vivid & colourful recipe images for aesthetic visual contrast, which presents itself as striking to the user.
 -  The color scheme used for this website is simply Black/White with images taken from [Unsplash](https://unsplash.com/) & [BBC Good Food](https://www.bbcgoodfood.com/)
 
 - ![#fff](https://via.placeholder.com/15/fff/000000?text=+) `#fff`
@@ -211,7 +211,7 @@ None of the above features are currently implemented in project. They are specul
     - Used as the base for cascading styles.
 
 - [JQuery](https://en.wikipedia.org/wiki/JQuery) 
-    - Used as the primary JavaScript functionality
+    - Used as the primary JavaScript functionality.
 
 - [MaterializeCSS](https://materializecss.com/)
     - Used as primary overall design framework.
@@ -227,7 +227,7 @@ None of the above features are currently implemented in project. They are specul
 -**Flask**
 
 - [Flask](https://en.wikipedia.org/wiki/Flask_(web_framework)) 
-    -Used as web framework
+    - Used as web framework.
 
 - [Jinja 2.10](http://jinja.pocoo.org/docs/2.10/) 
     - Used for templating with Flask.
