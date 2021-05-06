@@ -372,6 +372,8 @@ Using Google Chrome [DevTools](https://developers.google.com/web/tools/chrome-de
     - Laptop (1600px)
     - Large Phone (500px)
 
+- The website seems to be responsive on physical devices I tested with as well as the device sizes on Chrome Dev Tools.
+
 ##### back to [top](#table-of-contents)
 
 ## Deployment
@@ -475,8 +477,8 @@ This site is currently deployed on [Heroku](https://www.heroku.com/) using the *
 - I received inspiration for this project from 
 
 -[Tim Nelson](https://github.com/TravelTimN/)
-    -Found his tutorials in data centric development module of the course to be very informative and easy to understand.
-    -Tried to follow his formatting style for his README files in his numerous projects.
+    - Found his tutorials in data centric development module of the course to be very informative and easy to understand.
+    - Tried to follow his formatting style for his README files in his numerous projects.
 
 ##### back to [top](#table-of-contents)
 
@@ -486,14 +488,18 @@ This site is currently deployed on [Heroku](https://www.heroku.com/) using the *
     - "Validate HTML by url to ensure that there are no errors in your markup (https://validator.w3.org/nu/)., errors can be seen in pages - https://validator.w3.org/nu/?doc=https%3A%2F%2Fonline-cookbook-ms3.herokuapp.com%2Fget_recipes"
     - These have been rectified by removing empty elements & adding alt tags to all img attributes on the page.
     - [Correction Commit: 890a688](https://github.com/Shadyxstep/Online-Cookbook--MS3/commit/890a6888af043778d8afaf381927091893dfeece)
+    - Retested all 17* HTML files & rectified any html parsing errors.
+        - The only errors still showing up in the validator are regarding the HTML validator not recognizing jinja templating.
 
 - Debug turned on in production version.
     - [Correction Commit: 5cd713c](https://github.com/Shadyxstep/Online-Cookbook--MS3/commit/5cd713c940aaed6029b4a8ce0a42d7abce94437e).
     - Debug is now turned to False.
 
-- Added a tablke of content to readme as suggested in project feedback email.
+- Added a table of content to readme as suggested in project feedback email.
 
-- App.py file retested to ensure pep8 compliance.
+- App.py file retested to ensure pep8 compliance. No issues found.
+
+- static/css/style.css retested through [CSS Validator](https://jigsaw.w3.org/css-validator/validator), No issues found.
 
 ## **Disclaimer** 
 
